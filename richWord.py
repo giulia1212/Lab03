@@ -15,3 +15,10 @@ class RichWord:
 
     def __str__(self):
         return self._parola
+
+    def stato_parola(self):
+        if self._corretta:
+            stato = 'Corretta'
+        else:
+            stato = 'Non Corretta'
+        return f"{self._parola} è {stato}"
